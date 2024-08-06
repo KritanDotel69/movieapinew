@@ -13,8 +13,9 @@ const Header = () => {
             const { isActive } = n;
             return isActive === true ? 'text-pink-700' : 'text-white';
           }
-        } to='/about-page' >About</NavLink>
-        <NavLink to='/contact-page'>Contact</NavLink>
+        } to='/movieCategory/popular' >Popular</NavLink>
+        <NavLink to='/movieCategory/top-rated'>Top-Rated</NavLink>
+        <NavLink to='/movieCategory/upcoming'>Upcoming</NavLink>
 
       </nav>
 
@@ -23,6 +24,6 @@ const Header = () => {
 }
 
 export default Header
-
+ 
 
 

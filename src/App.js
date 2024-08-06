@@ -8,6 +8,7 @@ import RootLayOut from './components/RootLayOut'
 
 
 
+
 const App = () => {
 
 
@@ -16,8 +17,9 @@ const App = () => {
       <Routes>
         <Route path='/' element={<RootLayOut />} >
           <Route index element={<HomePage />} />
-        
+>
           <Route path='*' element={<NotFound />} />
+     
 
         </Route>
 

@@ -1,4 +1,5 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
+import { configureStore } from "@reduxjs/toolkit";
+import { movieApi } from "./movieApi";
 
 
 
@@ -6,11 +7,15 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 
 
+export const store = configureStore({
+  reducer: {
+    [movieApi.reducerPath]: movieApi.reducer,
 
-
-
-
-
+  },
+middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat([
+  movieApi.middleware
+])
+});
 
 
 
