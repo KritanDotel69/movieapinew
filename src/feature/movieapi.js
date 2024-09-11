@@ -7,7 +7,7 @@ export const movieApi = createApi ({
   baseQuery: fetchBaseQuery({baseUrl:'https://api.themoviedb.org/3'}),
   endpoints:(builder) => ({
 
-    movieByCategroy: builder.query({
+    movieByCategory: builder.query({
       query: (query) => ({
         url: `/movie/${query}`,
         params: {
@@ -23,4 +23,4 @@ export const movieApi = createApi ({
 
 
 
-export const { useMovieByCategroyQuery } = movieApi;
+export const { useMovieByCategoryQuery } = movieApi;

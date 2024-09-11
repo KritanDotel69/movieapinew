@@ -1,18 +1,21 @@
 import React from 'react'
-import { useMovieByCategroyQuery } from '../feature/movieApi'
+import CategoryMovie from './CategoryMovie'
+
 
 
 
 const HomePage = () => {
 
-const data = useMovieByCategroyQuery('popular');
-console.log(data);
-
   return (
-    <>
-    
-    </>
+    <div>
+      <CategoryMovie />
+    </div>
   )
 }
 
 export default HomePage
+
+
+
+
+// to make image load use npm shimmer 
